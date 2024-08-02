@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost'; // Adresse de l'hôte de la base de données
-$dbname = 'boutique_en_ligne'; // Nom de la base de données
+$dbname = 'ecommerceBoutique'; // Nom de la base de données
 $user = 'root'; // Nom d'utilisateur
-$pass = ''; // Mot de passe
+$pass = 'root'; // Mot de passe
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
