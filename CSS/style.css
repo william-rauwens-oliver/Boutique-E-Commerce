@@ -152,7 +152,6 @@ html {
 
 body {
   background-color: var(--white);
-  color: var(--gray-web);
   font-size: 1.6rem;
   font-weight: var(--fw-500);
   line-height: 1.6;
@@ -187,6 +186,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.title-left {
+  font-family: 'Dancing Script', cursive;
+  color: var(--black);
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+  font-size: var(--fs-1);
+  margin-left: -100px;
+}
+
+.title-right {
+  font-family: 'Dancing Script', cursive;
 }
 
 .h1,
@@ -379,7 +391,6 @@ body {
 }
 
 .header-top {
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -981,7 +992,7 @@ body {
  * responsive for larger than 575px screen
  */
 
-@media (min-width: 575px) {
+ @media (min-width: 575px) {
 
   /**
    * REUSED STYLE
@@ -1247,7 +1258,6 @@ body {
 
   .header-top {
     position: unset;
-    padding-block: 24px 0;
   }
 
   .header-top:is(.active, .header-hide) { all: unset; }
@@ -1263,6 +1273,7 @@ body {
     padding-inline-end: 40px;
     outline: none;
     transition: var(--transition-1);
+    border-radius: 30px;
   }
 
   .search-field::placeholder { color: var(--spanish-gray); }

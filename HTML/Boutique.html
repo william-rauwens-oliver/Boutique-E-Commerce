@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top container">
+      <button class="nav-open-btn" aria-label="Ouvrir le menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="header-action-btns">
+        <button class="header-action-btn" aria-label="Panier">
+          <ion-icon name="cart-outline"></ion-icon>
+        </button>
+        <button class="header-action-btn" aria-label="Rechercher">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Boutique Section -->
+  <section class="shop container section">
+    <div class="title-wrapper">
+      <h2 class="h2-large">Boutique</h2>
+      <a href="#" class="btn-link">Voir tout <ion-icon name="arrow-forward-outline"></ion-icon></a>
+    </div>
+
+    <ul class="flex-list">
+      <!-- Article 1 -->
+      <li class="shop-card">
+        <div class="card-banner img-holder" style="--width: 600; --height: 800;">
+          <img src="image1.jpg" alt="Nom de l'article 1" class="img-cover">
+          <div class="card-actions">
+            <button class="action-btn" aria-label="Ajouter au panier">
+              <ion-icon name="cart-outline"></ion-icon>
+            </button>
+            <button class="action-btn" aria-label="Voir les détails">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Nom de l'article 1</h3>
+          <div class="price">
+            <span class="span">€29.99</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- Article 2 -->
+      <li class="shop-card">
+        <div class="card-banner img-holder" style="--width: 600; --height: 800;">
+          <img src="image2.jpg" alt="Nom de l'article 2" class="img-cover">
+          <div class="badge">Nouveau</div>
+          <div class="card-actions">
+            <button class="action-btn" aria-label="Ajouter au panier">
+              <ion-icon name="cart-outline"></ion-icon>
+            </button>
+            <button class="action-btn" aria-label="Voir les détails">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Nom de l'article 2</h3>
+          <div class="price">
+            <span class="span">€39.99</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- Ajouter d'autres articles de la même manière -->
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div>
+        <h4 class="footer-list-title">Contactez-nous</h4>
+        <p class="footer-list-text">Adresse : 123 Rue Exemple, Paris, France</p>
+        <p class="footer-list-text">Téléphone : +33 1 23 45 67 89</p>
+        <p class="footer-list-text">Email : contact@example.com</p>
+      </div>
+      <div>
+        <h4 class="footer-list-title">Suivez-nous</h4>
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-list-title">Newsletter</h4>
+        <p class="newsletter-text">Inscrivez-vous pour recevoir les dernières nouvelles et offres.</p>
+        <form class="newsletter-form">
+          <input type="email" class="email-field" placeholder="Votre email">
+          <button class="btn btn-primary">S'abonner</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p class="copyright">© 2022 CodeWithSadee. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <button class="back-top-btn" aria-label="Retour en haut">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+
+  <div class="overlay"></div>
+  <nav class="mobile-navbar">
+    <div class="wrapper">
+      <button class="nav-close-btn" aria-label="Fermer le menu">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
+    <ul class="navbar">
+      <li><a href="#" class="navbar-link">Accueil</a></li>
+      <li><a href="#" class="navbar-link">Boutique</a></li>
+      <li><a href="#" class="navbar-link">À propos</a></li>
+      <li><a href="#" class="navbar-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
